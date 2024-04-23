@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  
+  /* background-image: url('../assets/Background-fixed.png'); */
+  background-image: linear-gradient(to top right,#6A3B55 ,#44636E );
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0; /* Menghilangkan margin bawaan dari body */
+  font-family: 'Arial', sans-serif; /* Ganti dengan font yang diinginkan */
+  color: #ffffff; /* Warna teks */
+
+}
+
+/* Tambahan styling untuk elemen-elemen lain jika diperlukan */
+
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 30px;
+}
+.header-sec{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  /* margin-bottom: 100px; */
+}
+
+
+
+
+
+/*=============================*/
+/*=============================*/
+/*=============================*/
+/*===========Utility===========*/
+/*=============================*/
+/*=============================*/
+/*=============================*/
+
+.gap-5{
+  gap: 500px;
+}
+
+.border-white{
+  border: 1px solid #ffff;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb-custom{
+  margin-bottom: 20px;
+}
+
+.w-taharica{
+  height: 100vh;
+}
+.fullscreen{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
+.taharica-bg{
+  background-image: url('../assets/bahan-background.png');
+  background-size: 50%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.gap-custom{
+  gap: 15px;
+}
+/*=============================*/
+/*=============================*/
+/*=============================*/
+/*===========header============*/
+/*=============================*/
+/*=============================*/
+/*=============================*/
+
+/*container*/
+.user-container{
+/*  border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+}
+
+.userIcon{
+  position: absolute;
+  top:0 ;
+  left:-80px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+/*  border: 1px solid blue;*/
+/*  color: red;*/
+}
+
+
+/*///////////////////////*/
+.user-container-sec{
+/*  border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 5px;
+  position: relative;
+}
+
+.userIcon-sec{
+  position: absolute;
+    top: -10px;
+    left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+/*  border: 1px solid blue;*/
+/*  color: red;*/
+}
+
+.userInfo{
+  height: 35px;
+    transition: 200ms;
+}
+.userInfo:hover{
+  transform: scale(0.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: 200ms;
+}
+
+.userIcon-sec p{
+  font-style: 12px;
+  color: white;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+
+
+.userIcon:hover{
+  text-decoration: none;
+  
+}
+
+
+/*images*/
+.userIcon img{
+/*  width: ;*/
+  height: 35px;
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.userIcon p{
+  font-style: 12px;
+  color: white;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+
+/* =========single============ */
+.landingPageHead{
+  height: 90px;
+  width: 100%;
+}
+
+
+
+.pageSingle {
+  width: 100%;
+  padding: 50px;
+
+  height: calc(100vh - 90px); /* 100vh dikurangi dengan tinggi landingPageHead */
+}
+
+.pc-3{
+  padding:0 299px;
+}
+/*=============================*/
+/*=============================*/
+/*=============================*/
+/*===========Main==============*/
+/*=============================*/
+/*=============================*/
+/*=============================*/
+
+
+.main{
+  height: 91%;
+}
+
+.heading-homepage{
+  font-size: 36px;
+  font-weight: 700;
+  font-style: bold;
+/*  color: red;*/
+}
+/*searchbar att*/
+.search-form {
+  background-repeat: white;
+  padding: 5px 10px;
+/*  border:1px solid grey;*/
+  width: 70%;
+}
+.search-field {
+  padding: 10px 13px;
+  border-radius: 10px;
+  border: 0;
+  width: 78%;
+}
+.search-field:active {
+  outline: none;
+}
+.search-submit{
+  display: none;
+}
+
+.search-btn {
+  padding: 10px 13px;
+  border-radius: 10px;
+  /* border: 0; */
+  background-color: white;
+  color: #292929;
+  width: 20%;
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(to bottom right, #FF4242, #2B70CB);
+  transition: transform 0.2s ease; /* Menambahkan efek transisi untuk smooth hover */
+}
+
+.search-btn:hover {
+  
+  transform: scale(0.95); /* Mengecilkan tombol saat dihover */
+}
+
+
+
+
+.bg-white-custom{
+  background-color: #ffff;
+}
+
+
+
+/* toga */
+.rumah-toga{
+  position: relative;
+}
+.toga{
+  position: absolute;
+  top: 42px;
+  left: -17px;
+  width: 57px;
+}
+
+
+
+
+
+
+/*=============================*/
+/*=============================*/
+/*=============================*/
+/*===========Navigation========*/
+/*=============================*/
+/*=============================*/
+/*=============================*/
+
+.navigation-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 60px;
+}
+.navigation-menu li{
+  margin: 0 30px;
+  display: flex;
+}
+
+.navigation-menu li a{
+  text-decoration: none;
+}
+
+.navigation-ball-user {
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+  /* background-color: #443C49; */
+  border-radius: 500px;
+  padding: 20px;
+  margin-top: 0 30px;
+  transition: background-color 2000ms, transform 0.5s ease; /* Menambahkan efek transisi untuk smooth hover */
+}
+
+
+.navigation-ball {
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  background-color: #443C49;
+  border-radius: 500px;
+  padding: 20px;
+  margin-top: 0 30px;
+  transition: background-color 2000ms, transform 0.5s ease; /* Menambahkan efek transisi untuk smooth hover */
+}
+
+
+.navigation-ball:hover {
+  background-color: #0f0d11;
+  transform: scale(0.95); /* Mengecilkan tombol saat dihover */
+  text-decoration: none;
+}
+
+
+.navigation-text{
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+.navigation-text:hover{
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  z-index: 99999999;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 260px;
+  height: 100%;
+  background-color: #fdfdfd;
+  padding-top: 80px;
+  transition: 0.4s;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 15px;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu-toggle{
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+  align-items: center;
+}
+menu-toggle:active{
+  border: none;
+}
+.close-menu{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(160, 160, 160);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 40px;
+  border: none;
+  color: white;
+}
+.close-menu:active{
+  border: none;
+}
+/* .post-highlight{
+  gap: 20px;
+} */
+
+
+
+
+
+.post-card{
+      /* border: 1px solid red; */
+      width: 300px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      /* padding: 12px; */
+      /* gap: 20px; */
+      margin: 0 20px;
+      box-shadow: 0px 0px 16px -2px #292929;
+  
+}
+
+
+
+.home-post-caption{
+  position: relative;
+  cursor: pointer;
+}
+.post-caption{
+  position: absolute;
+  top: 157px;
+  left: 0;
+  width: 300px;
+  padding: 10px;
+  background: linear-gradient(to top right, rgba(106, 59, 85, 0.6), rgba(68, 99, 110, 0.6));
+  transition: 500ms;
+  text-align: center;
+  margin: 0;
+}
+.post-caption:hover{
+  background: linear-gradient(to top right, #6A3B55, #44636E);
+  transition: 500ms;
+  color: blue;
+}
+.create-post{
+  text-decoration: none;
+  color: white;
+}
+.create-post:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* mostview */
+.mostview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid red; */
+    padding: 15px;
+}
+
+.mostviewHome {
+  width: 239px;
+  /* border: 1px solid red; */
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Menambahkan transisi untuk efek halus */
+}
+
+.mostviewHome:hover {
+  transform: scale(1.1); /* Menambahkan scaling 110% saat dihover */
+}
+
+.mostviewCaption{
+  position: absolute;
+  top: 108px;
+  left: 0;
+  width: 239px;
+  padding: 10px;
+  background: linear-gradient(to top right, rgba(106, 59, 85, 0.6), rgba(68, 99, 110, 0.6));
+  transition: 500ms;
+  text-align: center;
+  margin: 0;
+}
+.mostviewCaption:hover{
+  background: linear-gradient(to top right, #6A3B55, #44636E);
+  transition: 500ms;
+  color: blue;
+}
+.mostviewHome img {
+  width: 239px;
+  height: 152px;
+}
+
+.heading-style1 {
+  text-align: center;
+}
+.tpg-widget-heading-line{
+  display: none;
+}
+
+/* .tpg-widget-heading::before{
+  display: none;
+} */
+div.rt-img-holder a img {
+  height:200px;
+}
+.rt-holder{
+  box-shadow: none;
+  -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+
+
+
+
+.create-post{
+  text-decoration: none;
+  color: white;
+}
+.create-post:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+.mostview-card{
+  /* border: 1px solid red; */
+  min-width: 239px;
+  max-width: 300px;
+  /* height: 200px; */
+  display: flex;
+  flex-direction: column;
+  /* padding: 12px; */
+  /* gap: 20px; */
+  /* margin: 0 20px; */
+  /* box-shadow: 0px 0px 16px -2px #292929; */
+
+}
+
+
+.list-topic{
+  list-style: none;
+
+}
+
+.nav-button{
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: rgb(83, 83, 83);
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  transition: 200ms;
+}
+.nav-button:hover{
+  background-color: rgb(233, 233, 233);
+  transition: 200ms;
+  text-decoration: none;
+  color: #292929;
+}
+
+
+.pld-like-trigger .fa-thumbs-up{
+  font-size: 40px;
+}
+.pld-like-trigger span{
+  font-size: 40px;
+}
+
+/* =========== */
+/* =========== */
+/* ===Comment Area ==== */
+/* =========== */
+/* =========== */
+/* =========== */
+
+
+.comments-area{
+  border: 1px solid red;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+.comment-reply-title{
+  display: none;
+}
+.logged-in-as{
+  display: none;
+}
+
+.comment-form-comment label{
+  display: none;
+}
+
+/* commnet button  */
+.form-submit .submit{
+  
+
+  border: 1px solid #ffff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  /* border: 0; */
+  background-color: white;
+  color: #292929;
+  /* width: 20%; */
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(to bottom right, #FF4242, #2B70CB);
+  transition: transform 0.2s ease; /* Menambahkan efek transisi untuk smooth hover */
+}
+
+
+.form-submit .submit:hover {
+  
+  transform: scale(0.95); /* Mengecilkan tombol saat dihover */
+}
+
+.comment-respond{
+  width: 100%;
+}
+
+.comment-form-comment textarea{
+  /* background-color: red; */
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  outline: none; /* Menghilangkan outline ketika textarea mendapatkan fokus */
+
+  height: 100px; /* Sesuaikan tinggi dengan kebutuhan Anda */
+}
+.comments-title{
+  font-size: 24px;
+  color: grey;
+}
+.comment-list{
+  /* border: 1px solid red; */
+  list-style: none;
+}
+
+
+.comment-form span{
+  display: none;
+}
+
+.comment-form-author{
+  padding: 10px;
+  /* border: 1px solid red;   */
+}
+.comment-form-author input{
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid grey;
+  border-left: none;
+}
+
+
+
+.icon-size{
+  font-size: 40px;
+}
+.gap-icon{
+  gap: 120px;
+}
+.icon-like{
+  font-size: 30px;
+  color: #0f0d11;
+  font-weight: 600;
+}
+
+
+.comment-form-email{
+  padding: 10px;
+  /* border: 1px solid red;   */
+}
+.comment-form-email input{
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid grey;
+  border-left: none;
+}
+
+
+.comment-form-url{
+  display: none;
+}
+.comment-form-url label input{
+display: none;
+}
+.comment-form-cookies-consent{
+  display: none;
+}
+.comment-form-cookies-consent input label{
+  display: none;
+}
+
+.form-submit{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.comment-btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  /* border: 0; */
+  background-color: white;
+  color: #292929;
+  /* width: 20%; */
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(to bottom right, #FF4242, #2B70CB);
+  transition: transform 0.2s ease; /* Menambahkan efek transisi untuk smooth hover */
+}
+
+.comment-btn:hover {
+  text-decoration: none;
+  color: white;
+  transform: scale(0.95); /* Mengecilkan tombol saat dihover */
+}
+
+.pld-like-wrap a > i span{
+  font-size: 24px;
+}
+
+
+
+
+
+
+.comment-author .fn a{
+  color: #292929;
+  font-style: normal;
+  font-weight: 600;
+}
+.comment-body{
+  margin-bottom: 20px;
+}
+.comment-body p{
+  color: #292929;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.commentmetadata a{
+  color: grey;
+}
+
+.reply a{
+  color: #292929;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================== */
+/* ======Topic======= */
+/* ================== */
+/* Kode Anda */
+.topic-parrent {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  list-style: none;
+}
+
+.topic-child {
+  list-style: none;
+}
+
+.topic-content {
+  background-color: grey;
+  color: white;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+.topic-content:hover {
+  background-color: lightgrey;
+  text-decoration: none;
+  color: white;
+}
+
+/* Kode Dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.topic-content:hover + .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+}
+
+.dropdown li:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+
+
+
+.judul-article{
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/*login Section*/
+.loginPage{
+    background-image: linear-gradient(to top right,#6A3B55 ,#44636E );
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0; /* Menghilangkan margin bawaan dari body */
+    font-family: 'Arial', sans-serif; /* Ganti dengan font yang diinginkan */
+    color: #ffffff; /* Warna teks */
+}
+.backgroundLogo{
+    background-image: url('./assets/bahan-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px ;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-display{
+    color: #ffff;
+    font-weight: 300;
+
+}
+.loginCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(to top right, rgba(68, 99, 110, 0.8), rgba(106, 59, 85, 0.8)); /* Gradient dengan opacity 0.8 */
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 12px 12px 12px #292929;    
+    min-width: 400px;
+}
+.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 12px;
+}
+.loginForm input{
+    padding: 12px 19px;
+    font-size: 19px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    /* outline-width: 0; */
+
+}
+.loginForm input:focus{
+    outline: none;
+}
+
+.login-btn{
+    background-image: linear-gradient(to bottom right, #FF4242, #2B70CB);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+/*diedit dengan WPIDE*/
